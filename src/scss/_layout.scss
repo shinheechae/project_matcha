@@ -50,34 +50,34 @@
 
 // Desktop
 @media (min-width: 1024px) {
- 
 
-    h2 {
-        color: var.$color-one;
-        padding: 1em 0;
-      }
+main {
+h2 {
+    color: var.$color-one;
+    padding: 0 1em;
+}
  
-    
-    .card {
-        img {
-            height: 200px
-            }
-                   
-        .card-body { 
-            a {
-                background-color: var.$color-one;
-                color: var.$color-two;
-                
-                &:focus, &:active, &:hover {
-                    box-shadow: none;
-                    outline: 0;
-                }
-                }
-
-            }  
-            }
 }
 
 
+.card {
+    img {
+        height: 200px
+        }
+               
+    .card-body { 
+        a {
+            background-color: var.$color-one;
+            color: var.$color-two;
+            
+            &:focus, &:active, &:hover {
+                box-shadow: none;
+                outline: 0;
+            }
+            }
+
+        }  
+        }
 
 
+    }
