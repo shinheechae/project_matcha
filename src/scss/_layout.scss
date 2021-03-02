@@ -50,5 +50,8 @@
 
 // Desktop
 @media (min-width: 1024px) {
-    
+    body {
+        background-color: var.$color-one;
+        color: var.$color-two;
+    }
 }
