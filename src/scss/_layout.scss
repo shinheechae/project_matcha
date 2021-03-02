@@ -1,0 +1,54 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1rem = 10px */
+:root {
+    font-size: 62.5%;
+}
+
+/*********** MOBILE FIRST! ***********/
+
+
+/* ------ Header Styles ------ */
+
+
+
+/* ------ About Styles ------ */
+
+
+
+/* ------ Header Styles ------ */
+
+
+
+/* ------ Header Styles ------ */
+
+
+
+/* ------ Contact Styles ------ */
+
+
+
+/* ------ Footer Styles ------ */
+
+
+
+/* ------ Media Queries ------ */
+
+// Tablets devices
+@media (min-width:768px) {
+
+}
+
+
+// Desktop
+@media (min-width: 1024px) {
+    
+}
