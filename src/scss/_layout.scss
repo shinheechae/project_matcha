@@ -1,6 +1,7 @@
 @use "./variables" as var;
 @use "./mixins" as mix;
 
+/* Reset CSS Values*/
 
 * {
     margin: 0;
@@ -8,16 +9,74 @@
     box-sizing: border-box;
 }
 
-/* 1rem = 10px */
+/* ------- General Styles ------- */
+
+// 1rem = 10px
 :root {
     font-size: 62.5%;
 }
 
+body {
+    width: 100vw;
+    font-size: 1.6rem;
+    font-family: var.$font-secondary;
+}
+
+h1, h2,
+h3, h4,
+h5, h6,
+nav {
+    font-family: var.$font-primary;
+}
+
+
+
 /*********** MOBILE FIRST! ***********/
+
 
 
 /* ------- Header Styles ------- */
 
+header {
+    width: 100vw;
+    height: 100vh;
+
+    #navbar {
+        width: 100vw;
+        height: 80px;
+        padding: 1rem 1.5rem;
+        background-color: var.$color-one;
+        
+        position: fixed;
+        top: 0;
+
+        @include mix.flex-row;
+        justify-content: space-between !important;
+
+
+        .logo > img {
+            width: 200px;
+            
+        }
+
+
+
+        // .collapse {
+        //     margin-top: 3rem;
+        // }
+    }
+
+    .hero {
+        width: 100vw;
+        height: calc(100vh - 80px);
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+}
 
 /* ------- Main Styles ------- */
 
@@ -43,7 +102,7 @@
 
 // Tablets devices
 @media (min-width:768px) {
-
+    
 }
 
 
