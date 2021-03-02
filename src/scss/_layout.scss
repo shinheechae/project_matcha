@@ -70,7 +70,7 @@ h2 {
             background-color: var.$color-one;
             color: var.$color-two;
             
-            &:focus, &:active, &:hover {
+            &:hover, &:active, &:focus {
                 box-shadow: none;
                 outline: 0;
             }
