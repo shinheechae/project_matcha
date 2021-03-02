@@ -50,8 +50,33 @@
 
 // Desktop
 @media (min-width: 1024px) {
-    body {
+ 
+main {
         background-color: var.$color-one;
         color: var.$color-two;
+        margin: 0 auto;
+    
+   h2 {
+        color: var.$color-one;
+        padding: 1em 0;
+      }
+
+    .cards {
+    
+     .card {
+            img {
+                    height: 40vh;
+                }
+
+            a {
+                background-color: var.$color-one;
+                color: var.$color-two;
+                }
+            }
+
     }
+
+    }
+
+
 }
