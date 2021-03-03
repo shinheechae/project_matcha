@@ -1,6 +1,7 @@
 @use "./variables" as var;
 @use "./mixins" as mix;
 
+/* Reset CSS Values*/
 
 * {
     margin: 0;
@@ -8,30 +9,169 @@
     box-sizing: border-box;
 }
 
-/* 1rem = 10px */
+/* ------- General Styles ------- */
+
+// 1rem = 10px
 :root {
     font-size: 62.5%;
 }
 
 body {
+    width: 100vw;
+    font-size: 1.6rem;
     font-family: var.$font-secondary;
+}
+
+h1, h2,
+h3, h4,
+h5, h6,
+nav {
+    font-family: var.$font-primary;
 }
 
 
 
-  
 /*********** MOBILE FIRST! ***********/
 
 
-/* ------ Header Styles ------ */
+
+/* ------- Header Styles ------- */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    #navbar {
+        width: 100vw;
+        height: 80px;
+        padding: 1rem 1.5rem;
+        background-color: var.$color-one;
+        
+        position: fixed;
+        top: 0;
+
+        .logo > img {
+            width: 200px;
+            
+        }
+
+        .small-devices {
+            height: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu {
+                align-items: center;
+            
+                /*---- Toggle Button -----*/
+
+                #menu-input {
+                    // display: none;
+
+                    &:checked ~ .side-navbar {
+                        left: 0vw;
+                    }
+
+                    &:checked ~ .menu.icon .bars {
+                        color: transparent;
+                    }
+
+                    &:checked ~ .menu.icon .times {
+                        color: var.$color-two;
+                    }
+                }
+
+                .menu.icon {
+                    position: relative;
+                    align-items: center;
+
+                    .bars,
+                    .times {
+                        position: absolute;
+                        transition: all 0.2s ease-in-out;
+                        color: var.$color-two;
+                    }
+
+                    .times {
+                        color: transparent;
+                    }
+                }
+
+                
+
+                .side-navbar {
+                    width: 100vw;
+                    height: fit-content;
+                    padding: 1rem;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    background-color: var.$color-one;
+                    font-size: 1.6rem !important;
+                    list-style: none;
+                    border-top: 2px solid var.$color-two;
+
+                    
+                    position: absolute;
+                    top: 78px;
+                    left: -100vw;
+                    transition: all .8s;
+
+                    .nav-item {
+                        width: 100%;
+                        flex-grow: 1;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+
+                    }
+                    
+                    .nav-link {
+                        color: var.$color-two;
+                        padding: 1rem;
+                        
+                    }
+
+                }
+
+            }
+        }
+
+    
+
+        .hero {
+            width: 100vw;
+            height: calc(100vh - 80px);
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+
+        .large-devices {
+            display: none;
+        }
+    }
+}
 
 
 
-/* ------ About Styles ------ */
+/* ------- Main Styles ------- */
+
+
+    /***** About Styles ******/
 
 
 
-/* ------ Event/Workshop Styles ------ */
+    /***** Event/Workshop Styles ******/
+
 .workshop {
     
     position: relative;
@@ -113,11 +253,9 @@ body {
     }
 }
 
-/* ------ Header Styles ------ */
 
 
-
-/* ------ Contact Styles ------ */
+    /***** Contact Styles ******/
 
 
 
@@ -129,14 +267,51 @@ body {
 
 // Tablets devices
 @media (min-width:768px) {
-
+    
 }
-
 
 // Desktop
 @media (min-width: 1024px) {
 
-    .workshop {
+  // HEADER STYLES
+    #navbar {
+    
+        .small-devices {
+            display: none !important;
+        }
+    
+        .large-devices {
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+    
+            .navbar {
+                display: flex;
+                align-items: center;
+                list-style: none;
+
+                .nav-item {
+                    margin-left: 3rem;
+                    font-size: 2.5rem;
+
+                    .nav-link {
+                        color: var.$color-two;
+                        padding: 0.5rem;
+                        transition: all .5s;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+            
+    
+        }
+    }
+  
+  
+  // EVENTS-WORKSHOP STYLES
+  .workshop {
         position: relative;
         h2 {
         color: var.$color-one;
@@ -202,8 +377,8 @@ body {
                 color: var.$color-two;
                 padding: .7em;
                 margin: 1em;
-    
             }
         }
-    }
+   }
+  
 }
