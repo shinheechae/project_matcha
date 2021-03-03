@@ -20,6 +20,7 @@ body {
     width: 100vw;
     font-size: 1.6rem;
     font-family: var.$font-secondary;
+    background-color: var.$color-two;
 }
 
 h1, h2,
@@ -29,7 +30,13 @@ nav {
     font-family: var.$font-primary;
 }
 
+h2 {
+  font-size: 3rem;
+}
 
+h3 {
+  font-size: 2rem;
+}
 
 /*********** MOBILE FIRST! ***********/
 
@@ -162,6 +169,10 @@ header {
 }
 
 
+h1, h2, h3, h4, h5 {
+  font-family: var.$font-primary;
+}
+
 
 /* ------- Main Styles ------- */
 
@@ -257,9 +268,58 @@ header {
 
     /***** Contact Styles ******/
 
+.contact-about {
+  padding: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
 
+.cont-sect {
+  h3 {
+    margin: 2rem 0 1rem;
+  }
+  table {
+    width: 100%;
+    margin: auto;
+    tr, td, th {
+      border: 1px solid var.$color-one;
+      padding : 1rem;
+    }
+  }
+  iframe {
+    width: 100%;
+    margin: 3rem 0;
+  }
+}
 
-/* ------ Footer Styles ------ */
+.book-sect {
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    &[type="submit"] {
+      width: 50%;
+      background-color: var.$color-one;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      }
+    }
+    input[type="submit"]{
+      font-family: var.$font-primary;
+      letter-spacing: 2px;
+      font-size: 2rem;
+    }
+  }
 
 
 
@@ -267,12 +327,16 @@ header {
 
 // Tablets devices
 @media (min-width:768px) {
-    
+  .contact-about {
+    width: 70%;
+    margin: auto;
+  }
+
 }
 
 // Desktop
 @media (min-width: 1024px) {
-
+  
   // HEADER STYLES
     #navbar {
     
@@ -401,4 +465,14 @@ header {
             }
         }
    }
+  // CONTACT STYLES
+  .contact-about {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    section {
+      margin: 3rem;
+    }
+  }
 }
