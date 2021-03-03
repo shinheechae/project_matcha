@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/main.css"/>
     <head section>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
       
   </head>
   <body>
@@ -18,20 +20,28 @@
           <li>Home</li>
           <li>About</li>
           <li>Menu</li>
-          <li>Event</li>
           <li>Contact</li>
         </ul>
       </nav>
     </header>
   
     <main>
-      <section class="workshop px-3">
+  <section class="workshop px-3">
         
-    <h2 class="text-center py-3">Members' exclusive: Sunday workshops</h2>
+    <h2 class="text-center py-3">Members-only: Sunday workshops</h2>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <h2 id="alertHeading">Match@maker goes to Youtube</h2> 
+      <p>Due to lockdown, our offline workshop is currently closed. Instead, we launched our channel on Youtube. Please join our live streaming today!</p>
+      <a href="#" class="btn">Click to subscribe</a>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close" data-bs-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+     </div>
 
     <div class="row cards">
   
-  <div class="col-md-4">
+   <div class="col-md-4">
     <div class="card">
       <div class="card-header py-3">15:30 - 17:00, every 1st Sunday
       </div>
@@ -42,9 +52,9 @@
         <a href="#" class="btn">Join Now</a>
       </div>
     </div>
-  </div>
+   </div>
 
-  <div class="col-md-4">
+   <div class="col-md-4">
     <div class="card">
       <div class="card-header py-3">13:30 - 16:00, every 2nd & 3rd Sunday
       </div>
@@ -55,9 +65,9 @@
         <a href="#" class="btn">Join Now</a>
       </div>
     </div>
-  </div>
+   </div>
 
-  <div class="col-md-4">
+   <div class="col-md-4">
     <div class="card">
       <div class="card-header py-3">14:00 - 16:00, every last Sunday
       </div>
@@ -69,14 +79,8 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
 
-<div class="notice">
-  <h2>Match@maker goes to Youtube</h2>
-  <p>Due to lockdown, our offline workshop is currently closed. Instead, we launched our channel on Youtube. Please join our live streaming today!</p>
-  <a href="#" class="btn">Click to subscribe</a>
-</div>
-    
 </section>
 </main>
 
@@ -84,6 +88,6 @@
     <!-- Custom scripts, edit above this line -->
     <script src="scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+  
   </body>
 </html>
