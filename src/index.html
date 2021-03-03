@@ -21,7 +21,7 @@
         <div class="small-devices">
 
           <div class="logo">
-            <img src="./images/matchamaker.jpg" alt="logo">
+            <img src="./images/newlogo.png" alt="logo">
           </div>
           
           <div class="menu d-flex">
@@ -29,9 +29,9 @@
             <!-- Toggle Button -->
             <input type="checkbox" id="menu-input">
 
-            <label for="menu-input" class="menu-icon d-flex">
-                <i class="bars fas fa-bars"></i>
-                <i class="times fas fa-times"></i>
+            <label for="menu-input" class="burger-menu d-flex" data-bs-toggle="collapse" data-toggle="collapse" data-bs-target="#navbarCollapse">
+                <i class="bars fas fa-bars fa-2x"></i>
+                <i class="times fas fa-times fa-2x"></i>
             </label>
 
             <ul class="side-navbar">
@@ -59,14 +59,13 @@
         </div>
 
         <!-- LARGE DEVICES -->
-
         <div class="large-devices">
 
           <div class="logo">
-            <img src="./images/matchamaker.jpg" alt="logo">
+            <img src="./images/newlogo.png" alt="logo">
           </div>
 
-          <ul class="navbar">
+          <ul class="desktop-navbar">
 
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
@@ -90,8 +89,12 @@
 
       </nav>
 
-      <div id="home" class="hero">
-        <img src="./images/hero.jpg" alt="Match@Maker place">
+      <div role="img" aria-label="Matcha Maker Restaurant" id="home" class="hero">
+        <div class="hero-text">
+          <p class="fw-bold display-2">Fancy a cup of matcha?</p>
+          <p class="fw-bold display-5">Berlin's finest matcha & mochi from Jeju.<br>Crushing on greens, we're match@makers!</p>
+          <button  type="button" class="btn btn-lg">Buy now!</button>
+        </div>
       </div>
 
     </header>
@@ -259,6 +262,8 @@
             <input type="submit" value="Send">
 
         </section>
+
+      </section>
 
     </main>
 
