@@ -58,6 +58,8 @@ header {
 
         .small-devices {
             height: 100%;
+
+            display: flex;
             justify-content: space-between;
             align-items: center;
 
@@ -90,6 +92,7 @@ header {
                     .times {
                         position: absolute;
                         transition: all 0.2s ease-in-out;
+                        color: var.$color-two;
                     }
 
                     .times {
@@ -104,6 +107,10 @@ header {
                     height: fit-content;
                     padding: 1rem;
 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
                     background-color: var.$color-one;
                     font-size: 1.6rem !important;
                     list-style: none;
@@ -116,17 +123,18 @@ header {
                     transition: all .8s;
 
                     .nav-item {
+                        width: 100%;
+                        flex-grow: 1;
                         display: flex;
+                        text-align: center;
                         justify-content: center;
 
-                        &:hover {
-                            background-color: darken(var.$color-one, 15%);
-                        }
                     }
-
+                    
                     .nav-link {
                         color: var.$color-two;
                         padding: 1rem;
+                        
                     }
 
                 }
@@ -148,7 +156,7 @@ header {
 
 
         .large-devices {
-            display: none !important;
+            display: none;
         }
     }
 }
@@ -182,29 +190,41 @@ header {
     
 }
 
-
 // Desktop
 @media (min-width: 1024px) {
     
-    
     #navbar {
-
-        ul {
-            display: flex;
-            align-items: center;
+    
+        .small-devices {
+            display: none !important;
         }
+    
+        .large-devices {
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+    
+            .navbar {
+                display: flex;
+                align-items: center;
+                list-style: none;
 
-        .nav-item {
-            margin-left: 5rem;
-            font-size: 2.5rem;
+                .nav-item {
+                    margin-left: 3rem;
+                    font-size: 2.5rem;
 
-            a {
-                transition: all .5s;
-
-                &:hover {
-                    transform: scale(1.2);
+                    .nav-link {
+                        color: var.$color-two;
+                        padding: 0.5rem;
+                        transition: all .5s;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
                 }
             }
+            
+    
         }
     }
 }
