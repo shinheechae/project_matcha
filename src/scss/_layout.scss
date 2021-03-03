@@ -49,5 +49,22 @@
 
 // Desktop
 @media (min-width: 1024px) {
+    .about {
+        width: 100vw;
+        height:30vh;
+        display: block;
+        position: relative;
+    }
 
+    .about::after {
+        content: "";
+        background: url("src/images/matcha.jpg");
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
 }
