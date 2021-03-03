@@ -40,6 +40,7 @@ nav {
 header {
     width: 100vw;
     height: 100vh;
+    position: relative;
 
     #navbar {
         width: 100vw;
@@ -50,33 +51,109 @@ header {
         position: fixed;
         top: 0;
 
-        @include mix.flex-row;
-        justify-content: space-between !important;
-
-
         .logo > img {
             width: 200px;
             
         }
 
+        .small-devices {
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu {
+                align-items: center;
+            
+                /*---- Toggle Button -----*/
+
+                #menu-input {
+                    // display: none;
+
+                    &:checked ~ .side-navbar {
+                        left: 0vw;
+                    }
+
+                    &:checked ~ .menu.icon .bars {
+                        color: transparent;
+                    }
+
+                    &:checked ~ .menu.icon .times {
+                        color: var.$color-two;
+                    }
+                }
+
+                .menu.icon {
+                    position: relative;
+                    align-items: center;
+
+                    .bars,
+                    .times {
+                        position: absolute;
+                        transition: all 0.2s ease-in-out;
+                    }
+
+                    .times {
+                        color: transparent;
+                    }
+                }
+
+                
+
+                .side-navbar {
+                    width: 100vw;
+                    height: fit-content;
+                    padding: 1rem;
+
+                    background-color: var.$color-one;
+                    font-size: 1.6rem !important;
+                    list-style: none;
+                    border-top: 2px solid var.$color-two;
+
+                    
+                    position: absolute;
+                    top: 78px;
+                    left: -100vw;
+                    transition: all .8s;
+
+                    .nav-item {
+                        display: flex;
+                        justify-content: center;
+
+                        &:hover {
+                            background-color: darken(var.$color-one, 15%);
+                        }
+                    }
+
+                    .nav-link {
+                        color: var.$color-two;
+                        padding: 1rem;
+                    }
+
+                }
+
+            }
+        }
+
+    
+
+        .hero {
+            width: 100vw;
+            height: calc(100vh - 80px);
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
 
 
-        // .collapse {
-        //     margin-top: 3rem;
-        // }
-    }
-
-    .hero {
-        width: 100vw;
-        height: calc(100vh - 80px);
-
-        img {
-            max-width: 100%;
-            height: auto;
+        .large-devices {
+            display: none !important;
         }
     }
-
 }
+
+
 
 /* ------- Main Styles ------- */
 
@@ -108,5 +185,26 @@ header {
 
 // Desktop
 @media (min-width: 1024px) {
+    
+    
+    #navbar {
 
+        ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-left: 5rem;
+            font-size: 2.5rem;
+
+            a {
+                transition: all .5s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
 }
