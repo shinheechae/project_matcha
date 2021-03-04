@@ -576,15 +576,15 @@ header {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-  .close-2 {
+  .closer {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .close-2:hover,
-  .close-2:focus {
+  .closer:hover,
+  .closer:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;

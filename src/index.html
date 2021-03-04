@@ -151,7 +151,7 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close-2">&times;</span>
+    <span class="closer">&times;</span>
     <div class="about-mochi">
       <h2>Baked with love,not sugar</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nesciunt debitis reiciendis ipsum optio, veniam nisi eum cum quas accusamus sapiente commodi obcaecati iure corporis dolorem veritatis magnam maiores molestiae.</p>
@@ -344,25 +344,25 @@
       }
      
 
-      // var modal = document.getElementById("myModal-2");
+      var modal2 = document.getElementById("myModal-2");
 
-      // var btn = document.getElementById("myBtn-2");
+      var btn = document.getElementById("myBtn-2");
 
-      // var span = document.getElementsByClassName("close-2")[0];
+      var span = document.getElementsByClassName("closer")[0];
 
-      // btn.onclick = function() {
-      //   modal2.style.display = "block";
-      // }
+      btn.onclick = function() {
+        modal2.style.display = "block";
+      }
 
-      // span.onclick = function() {
-      //   modal2.style.display = "none";
-      // }
+      span.onclick = function() {
+        modal2.style.display = "none";
+      }
       
-      // window.onclick = function(event) {
-      //   if (event.target == modal2) {
-      //     modal2.style.display = "none";
-      //   }
-      // }
+      window.onclick = function(event) {
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+      }
 
 
 
