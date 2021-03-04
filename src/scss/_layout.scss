@@ -22,6 +22,7 @@ body {
     font-family: var.$font-secondary;
     background-color: var.$color-two;
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 h1, h2,
@@ -52,20 +53,22 @@ h3 {
 header {
     width: 100vw;
     height: 100vh;
-    background: center / cover no-repeat url(../images/hero.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), center / cover no-repeat  url(../images/hero.jpg);
+
     position: relative;
 
     #navbar {
         width: 100%;
         height: 80px;
         margin: auto;
-        padding: 1rem 1.5rem;
+        padding: 1rem 3rem;
         background-color: var.$color-one;
         
         .logo {
             width: 30%;
             padding: 1rem;
-            padding-left: 0.6rem;
+            padding-left: 0;
+            // padding-left: 1.5rem;
 
             img {
                 width: 250px;
@@ -101,7 +104,7 @@ header {
                 .burger-menu {
                     margin: auto;
                     position: relative;
-                    right: 4rem;
+                    right: 3rem;
                     align-items: center;
 
                     .bars,
@@ -122,6 +125,7 @@ header {
                     width: 100vw;
                     height: fit-content;
                     padding: 1rem;
+                    padding-right: 1.5rem;
 
                     display: flex;
                     flex-direction: column;
@@ -183,6 +187,7 @@ header {
             0 0 8px black;
 
             button {
+                padding: 1rem;
                 color: var.$color-two;
                 background-color: var.$color-one;
 
@@ -190,8 +195,18 @@ header {
                 font-size: 1.6rem;
                 font-weight: bolder;
                 letter-spacing: 1px;
+                text-transform: uppercase;
 
                 float: right;
+
+                &:hover {
+                    background-color: darken(var.$color-one, 20%);
+                }
+
+                &:focus {
+                    border: none !important;
+                    outline: none !important;
+                }
             }
         }
     }
@@ -373,8 +388,14 @@ header {
                 width: fit-content;
                 padding-top: 10rem;
                 padding-left: 5rem;
+
+                button {
+                    padding: 1.2rem;
+                }
             }
         }
+
+        
     } 
     
     .contact-about {
@@ -401,9 +422,9 @@ header {
                 display: flex !important;
                 justify-content: space-between;
                 align-items: center;
-
+                padding-right: 1rem;
                 margin: auto;
-        
+                
                 .desktop-navbar {
                     margin-bottom: 0;
                     display: flex;
@@ -428,6 +449,10 @@ header {
                 width: fit-content;
                 padding-top: 15rem;
                 padding-left: 10rem;
+
+                button {
+                    padding: 1.4rem;
+                }
             }
         }
     }
@@ -553,6 +578,18 @@ header {
         .hero-text {
             padding-top: 20rem;
             padding-left: 20rem;
+
+            .display-2 {
+                font-size: 6.5rem !important;
+            }
+
+            .display-5 {
+                font-size: 4.5rem !important;
+            }
+
+            button {
+                padding: 1.5rem;
+            }
         }
     }
 }
