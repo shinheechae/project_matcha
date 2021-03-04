@@ -224,14 +224,13 @@ header {
     /***** Event/Workshop Styles ******/
 
 .workshop {
-    
+    .headline {
     position: relative;
-    h2 {
     font-size: 2.5rem;
-    color: var.$color-one;
+    color: black;
     font-family: var.$font-primary;
-    padding: 0 1em;
-
+    padding: 1em;
+   
     }
 
     .card {
@@ -241,11 +240,12 @@ header {
         .card-header {
             background-color: var.$color-one;
             color: var.$color-two;
-            border-radius: 8px 8px 0 0;
+            border-radius: 3px 3px 0 0;
         }
 
         img {
-            height: 200px
+            height: auto;
+            max-width: 100%;
         }
         
         h5 {
@@ -270,11 +270,13 @@ header {
 
     }  
         .alert button {
+            font-size: 3rem;
             &:hover, &:active, &:focus {
                 box-shadow: none;
                 outline: 0;
                 background-color: var.$color-one;
                 color: var.$color-two;
+                
             }
         }
     }
@@ -282,9 +284,11 @@ header {
         .alert {
             width: 100%;
             min-height: 25vh;
-            border-radius: 8px;
+            border-radius: 3px;
             padding: 1em;
             z-index: 10;
+            background-color: var.$color-two;
+            border: 1px solid gray;
         h2 {
             font-size: 2.2rem;
             padding: .3em .7em;
@@ -481,6 +485,8 @@ header {
     // EVENTS-WORKSHOP STYLES
     .workshop {
         position: relative;
+        margin: 2em auto;
+    
 
         h2 {
         color: var.$color-one;
@@ -489,7 +495,7 @@ header {
         }
 
         .card {
-            height: 400px;
+            min-height: 100%;
             border-radius: 8px;
 
             .card-header {
@@ -498,7 +504,8 @@ header {
             }
 
             img {
-                height: 200px
+                max-width: 100%;
+                height: auto;
             }
                
             .card-body { 
@@ -507,7 +514,7 @@ header {
                 a {
                     background-color: var.$color-one;
                     color: var.$color-two;
-            
+                    font-size: 1rem;
                     &:hover, &:active, &:focus {
                     box-shadow: none;
                     outline: 0;
@@ -517,6 +524,7 @@ header {
             }
 
             .alert button {
+                
                 &:hover, &:active, &:focus {
                     box-shadow: none;
                     outline: 0;
@@ -529,11 +537,11 @@ header {
         .alert {
             width: 60%;
             min-height: 25vh;
-            border-radius: 8px;
+            border-radius: 4px;
             position: absolute;
             top: 30%;
-            left:18%;
-            padding: 1.5em;
+            left: 20%;
+            padding: 3em;
             
             h2 {
                 font-size: 3rem;
@@ -551,6 +559,7 @@ header {
                 color: var.$color-two;
                 padding: .7em;
                 margin: 1em;
+                font-size: 1.5rem;
             }
         }
     }
