@@ -102,50 +102,85 @@
     <main class="main" data-bs-psy="scroll" data-bs-target="#navbar">
 
       <section id="about">
-      <!-- my part of the project goes here  -->
-      <div class=" about container">
-        <!-- Content here -->
-        <h2>About Match@maker </h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, quod odit? Est, consectetur deleniti, nostrum itaque adipisci similique aliquid ipsa et ad, voluptas nihil! Assumenda aperiam enim doloremque eveniet esse, aliquid ullam voluptate. Enim saepe animi autem quasi labore veritatis cum, consequuntur tenetur deserunt. Magnam non illo pariatur tempora! Nulla error tenetur ea earum quibusdam praesentium voluptatum dolores quam blanditiis a. Beatae, excepturi.</p>
+      <!-- start of about section   -->
+     <div class="about-wrapper">
+       <div class="about-us-wrapper">
+      <div class="about-us">
+        <h2>About Us</h2><br>
+        <div>
+        <p>Welcome to Match@maker!<br>
+        It doesn't matter if you come alone or a group, are vegan or flexitarian, are on a break or a date, everyone is welcome at Match@maker.<br>
+      Enjoy some real organic Matcha from Jeju Island with a side of our homemade vegan MochiBites made with love.</p>
       </div>
+      </div>
+      </div>
+      <div class="about-us-img">
+        <img src="../src/images/indexpic1.jpg" alt="">
 
-            <!-- list-group start -->
+      </div>
+      
+      <div class="matcha-pop-up">
+        <div class="img-wrapper">
+        <img src="../src/images/workshop.jpg" alt="" >
+        <button id="myBtn"class="btn-lg">Button</button>
+        </div>
+        <div id="myModal" class="modal">
 
-      <div class="container justify-content-center">
-      <div class="list-group list-group-horizontal align-items-center">
-    
-        <p class="p-3"> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium aut quod harum deserunt numquam tempore, dignissimos, ut maiores suscipit magni voluptate distinctio nisi molestiae quam totam unde voluptatum blanditiis voluptas vitae vero porro. Deserunt, officiis reiciendis. Porro, delectus libero?</p>
-        <figure><img src="https://picsum.photos/600" alt=""></figure>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p><h2>What makes our Tea different?</h2>
+         
+              <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequatur similique atque pariatur obcaecati nihil autem commodi corporis, dolore qui fugiat at minus? Quo unde tenetur ea facilis culpa perferendis.</p>
+            </p>
+          </div>
         
+        </div>
+       </div>
+       
+       <div class="mochi-pop-up img-wrapper">
+      
+         <img src="../src/images/indexpic3.jpeg" alt="">
+         <button id="myBtn-2"class="btn-lg">Button</button>
+         </div>
 
-      </div>
-      </div>
 
        
-      <div class="container justify-content-center">
-        <div class="list-group list-group-horizontal  align-items-center">
+         <!-- The Modal -->
+<div id="myModal-2" class="modal2">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="closer">&times;</span>
+    <div class="about-mochi">
+      <h2>Baked with love,not sugar</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nesciunt debitis reiciendis ipsum optio, veniam nisi eum cum quas accusamus sapiente commodi obcaecati iure corporis dolorem veritatis magnam maiores molestiae.</p>
+    </div>
+  </div>
+
+   </div>
       
-          <figure><img src="https://picsum.photos/600" alt=""></figure>
+        
 
-          <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse vero illo doloribus rem nesciunt ratione id nemo laborum velit eum error, iste enim totam soluta, sequi expedita eligendi harum? Qui consequatur tempora consectetur praesentium quo atque eligendi pariatur corporis.</p>
-          
+     
+     
+        <!-- <div class="about-mochi">
+          <h2>Baked with love,not sugar</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nesciunt debitis reiciendis ipsum optio, veniam nisi eum cum quas accusamus sapiente commodi obcaecati iure corporis dolorem veritatis magnam maiores molestiae.</p>
+        </div> -->
+
       
-        </div>
-        </div>
 
-        <div class="container">
-          <div class="list-group list-group-horizontal align-items-center">
-            <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ea nihil beatae atque, assumenda aspernatur nulla qui iste. Perferendis voluptas earum porro laboriosam corporis! Laborum autem unde saepe vitae, optio architecto eveniet, aspernatur odio, suscipit deserunt ducimus tempora a dolorem?</p>
-            <figure><img src="https://picsum.photos/600" alt=""></figure>
-            
-    
-          </div>
-          </div>
+     </div>
 
-          <!-- include butten menu -->
-        <!-- list-group end -->
 
+
+
+
+
+
+      <!-- include button for the menu upon shinhees request-->
+       <!--end of about section  -->
       </section>
 
       <section id="menu">
@@ -272,6 +307,68 @@
     </footer>
 
 
+    <script>// Get the modal
+      var modal = document.getElementById("myModal");
+    
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+  
+
+
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+    
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+     
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+
+
+      }
+     
+
+      var modal2 = document.getElementById("myModal-2");
+
+      var btn = document.getElementById("myBtn-2");
+
+      var span = document.getElementsByClassName("closer")[0];
+
+      btn.onclick = function() {
+        modal2.style.display = "block";
+      }
+
+      span.onclick = function() {
+        modal2.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+      }
+
+
+
+
+      
+      </script>
     <!-- Custom scripts, edit above this line -->
     <script src="scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
