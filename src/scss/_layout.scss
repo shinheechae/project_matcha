@@ -265,18 +265,21 @@ header {
             color: var.$color-two;
         
             &:hover, &:active, &:focus {
+            background-color: lighten(var.$color-one,8%);
             box-shadow: none;
             outline: 0;
+        
         }
         }
 
     }  
         .alert button {
             font-size: 3rem;
+            background-color: var.$color-one;
             &:hover, &:active, &:focus {
                 box-shadow: none;
                 outline: 0;
-                background-color: var.$color-one;
+                background-color: lighten(var.$color-one,8%);
                 color: var.$color-two;
                 
             }
@@ -301,7 +304,7 @@ header {
             padding: 0 1em;
         }
         a {
-            background-color: var.$color-one;
+            background-color: lighten(var.$color-one,8%);
             color: var.$color-two;
             padding: .7em;
             margin: 1em;
@@ -516,22 +519,23 @@ header {
                 a {
                     background-color: var.$color-one;
                     color: var.$color-two;
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                     &:hover, &:active, &:focus {
                     box-shadow: none;
                     outline: 0;
+                    background-color: lighten(var.$color-one,8%);
                     }
                 }
 
             }
 
             .alert button {
-                
+                background-color: var.$color-one;
                 &:hover, &:active, &:focus {
                     box-shadow: none;
                     outline: 0;
-                    background-color: var.$color-one;
                     color: var.$color-two;
+                    background-color: lighten(var.$color-one,8%);
                 }
             }
         }
@@ -546,7 +550,6 @@ header {
             padding: 3em;
             
             h2 {
-                font-size: 3rem;
                 padding: .3em .7em;
             }
 
@@ -559,9 +562,12 @@ header {
             a {
                 background-color: var.$color-one;
                 color: var.$color-two;
-                padding: .7em;
+                padding: .4em;
                 margin: 1em;
-                font-size: 1.5rem;
+                font-size: 1.8rem;
+                &:hover {
+                    background-color: lighten(var.$color-one,8%);
+                }
             }
         }
     }
