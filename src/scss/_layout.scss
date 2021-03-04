@@ -151,7 +151,7 @@ header {
                         transition: all .3s;
 
                         &:hover {
-                            background-color: darken(var.$color-one, 20%);
+                            background-color: lighten(var.$color-one, 8%);
                         }
                     }                    
                 }
@@ -199,8 +199,10 @@ header {
 
                 float: right;
 
+                @include mix.flex-row;
+
                 &:hover {
-                    background-color: darken(var.$color-one, 20%);
+                    background-color: lighten(var.$color-one, 8%);
                 }
 
                 &:focus {
