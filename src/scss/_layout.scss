@@ -367,7 +367,6 @@ header {
       cursor: pointer;
       font-family: var.$font-secondary;
       letter-spacing: 2px;
-      font-size: 2rem;
       &:hover {
         background-color: lighten(var.$color-one,8%);
       }
