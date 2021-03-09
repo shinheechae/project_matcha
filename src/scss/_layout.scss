@@ -187,6 +187,7 @@ header {
             0 0 8px black;
 
             a {
+                width: 140px;
                 padding: 1rem;
                 color: var.$color-two;
                 background-color: var.$color-one;
@@ -196,8 +197,6 @@ header {
                 font-weight: bolder;
                 letter-spacing: 1px;
                 text-transform: uppercase;
-
-                float: right;
 
                 @include mix.flex-row;
 
@@ -422,27 +421,28 @@ img {
        }  
 
        .card-body {
-       a {
-        background-color: var.$color-one;
-        color: var.$color-two;
-        font-size: 1.5rem;
-        &:hover, &:active, &:focus {
-        background-color: lighten(var.$color-one,8%);
-        box-shadow: none;
-        outline: 0;
-        }
-    }
-}
 
-        .alert button {
-          
+           a {
+               background-color: var.$color-one;
+               color: var.$color-two;
+               font-size: 1.5rem;
+               &:hover, &:active, &:focus {
+                   background-color: lighten(var.$color-one,8%);
+                   box-shadow: none;
+                   outline: 0;
+                }
+            }
+        }
+
+        .alert a {
+
             background-color: var.$color-one;
+            
             &:hover, &:active, &:focus {
                 box-shadow: none;
                 outline: 0;
-                background-color: lighten(var.$color-one,8%);
                 color: var.$color-two;
-                
+                background-color: lighten(var.$color-one,8%);
             }
         }
     }
@@ -542,16 +542,19 @@ img {
       height: 80px;
       background-color: var.$color-one;
       color: var.$color-two;
-
-      p {
-        margin-bottom: 0;
-      }
-  }
+      text-align: center;
+}
 
 /* ------ Media Queries ------ */
 
 // Tablets devices
 @media (min-width:768px) {
+
+    .hero {
+        a {
+            float: right;
+        }
+    }
 
     .about-wrapper {
         grid-template-columns: 1fr 1fr ;
