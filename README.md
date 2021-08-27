@@ -34,13 +34,12 @@
 
 ## Contact
 
-Shinhee Chae - shinheechae@gmail.com
+Shinhee Chae - shinheechae@gmail.com [LinkedIn](https://www.linkedin.com/in/shinhee-chae-95436221a/)
 <br />
-* [Project Link](https://github.com/shinheechae/project_matcha1)
-
 
 ## Acknowledgements
 
+* [Project Link](https://github.com/shinheechae/project_matcha1)
 * [Old Website(before renewal)](https://shinheechae.github.io/matchamaker/)
 * [GitHub Pages](https://pages.github.com)
 * [hatchful](https://hatchful.shopify.com)
