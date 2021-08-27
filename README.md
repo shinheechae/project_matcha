@@ -1,8 +1,8 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <a href="https://github.com/shinheechae/project_matcha1">
+
+  <a target="_blank" href="https://github.com/shinheechae/project_matcha">
     <img src="img/logo_yellow.png" alt="Logo" width="180" height="180">
   </a>
 
@@ -12,11 +12,11 @@
     Website Rebuilt for a Matcha Cafe in Berlin
     <br />
     
-    <a target="_blank" href="https://shinheechae.github.io/project_matcha/"><strong>App Link</strong></a>
+    <a href="https://shinheechae.github.io/project_matcha101/"><strong>App Link</strong></≈>
      <br />
     (deployed in Guithub Pages)
   </p>
-</p>
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -34,12 +34,13 @@
 
 ## Contact
 
-Shinhee Chae - shinheechae@gmail.com [LinkedIn](https://www.linkedin.com/in/shinhee-chae-95436221a/)
-<br />
+Shinhee Chae - shinheechae@gmail.com <br />
+[LinkedIn](https://www.linkedin.com/in/shinhee-chae-95436221a/)
+
 
 ## Acknowledgements
 
-* [Project Link](https://github.com/shinheechae/project_matcha1)
+* [Project Link](https://github.com/shinheechae/project_matcha)
 * [Old Website(before renewal)](https://shinheechae.github.io/matchamaker/)
 * [GitHub Pages](https://pages.github.com)
 * [hatchful](https://hatchful.shopify.com)
