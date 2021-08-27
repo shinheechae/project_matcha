@@ -36,7 +36,7 @@
 
 Shinhee Chae - shinheechae@gmail.com
 <br />
-Project Link: [https://github.com/shinheechae/Lotto_generator_ReactJS](https://github.com/shinheechae/project_matcha1)
+* [Project Link](https://github.com/shinheechae/project_matcha1)
 
 
 ## Acknowledgements
