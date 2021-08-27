@@ -11,7 +11,6 @@
   <p align="center">
     Website Rebuilt for a Matcha Cafe in Berlin
   </p>
-    <br />
   <p align="center">
     <a target="_blank" href="https://shinheechae.github.io/project_matcha101/"><strong>App Link</strong></a>
      <br />
