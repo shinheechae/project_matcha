@@ -22,9 +22,9 @@
 ## About The Project
 <p align="center">
 <a href="github.com/shinheechae/project_matcha/blob/main/img/">
-  <img src="img/shot1.png" alt="Screenshot" width="500" height="300">
-  <img src="img/shot2.png" alt="Screenshot" width="500" height="300">
-  <img src="img/shot3.png" alt="Screenshot" width="500" height="300">
+  <img src="img/shot1.png" alt="Screenshot" width="470" height="300">
+  <img src="img/shot2.png" alt="Screenshot" width="470" height="300">
+  <img src="img/shot3.png" alt="Screenshot" width="470" height="300">
   </a>
 
 - Single page website with a unified look
