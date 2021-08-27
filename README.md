@@ -1,22 +1,22 @@
 
 <!-- PROJECT LOGO -->
 <br />
-
+<p align="center">
   <a target="_blank" href="https://github.com/shinheechae/project_matcha">
     <img src="img/logo_yellow.png" alt="Logo" width="180" height="180">
   </a>
-
+ </p>
   <h3 align="center">Project_Matcha: Website Renewal</h3>
 
   <p align="center">
     Website Rebuilt for a Matcha Cafe in Berlin
+  </p>
     <br />
-    
-    <a href="https://shinheechae.github.io/project_matcha101/"><strong>App Link</strong></≈>
+  <p align="center">
+    <a target="_blank" href="https://shinheechae.github.io/project_matcha101/"><strong>App Link</strong></a>
      <br />
     (deployed in Guithub Pages)
   </p>
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
